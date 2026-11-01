@@ -5,6 +5,7 @@
 #   sh scripts/s00.sh pack <nguồn> <ra.tar.age> [tên]     đóng gói + mã hóa (tự bỏ .env, __pycache__, *.pkl)
 #   sh scripts/s00.sh log-new <file.md> <ĐẠT|BÁC|GHI CHÚ> <người>   mã hóa 1 thử nghiệm -> nhat_ky/NNNN.age + thêm dòng vào README
 #   sh scripts/s00.sh log-list                              giải mã & in toàn bộ nhật ký
+#   sh scripts/s00.sh rekey                                 mã hóa lại toàn bộ file .age cho danh sách recipients.txt hiện tại
 #   sh scripts/s00.sh scan <thư_mục>...                     quét chuỗi bí mật trước khi pack · verify: kiểm SHA-256
 # Khóa bí mật: $S00_AGE_KEY hoặc ~/.s00/age_key.txt (KHÔNG BAO GIỜ đưa vào repo).
 set -e
@@ -88,6 +89,20 @@ case "$1" in
       echo "################ $(basename "$f" .age) ################"
       decrypt "$f"
       echo
+    done
+    ;;
+  rekey)
+    need_age
+    mkdir -p "$OUT_DEFAULT"
+    for f in "$ROOT"/releases/*/*.tar.age "$ROOT"/research/*.tar.age "$ROOT"/nhat_ky/*.age; do
+      [ -f "$f" ] || continue
+      tmp="$OUT_DEFAULT/.rekey_$$.tmp"
+      decrypt "$f" | "$AGE" -R "$REC" -o "$tmp"
+      mv "$tmp" "$f"
+      echo "== Đã mã hóa lại: $f"
+    done
+    for d in "$ROOT"/releases/* "$ROOT"/research "$ROOT"/nhat_ky; do
+      [ -d "$d" ] && sums "$d"
     done
     ;;
   scan)  # quét thư mục nguồn TRƯỚC khi pack: chuỗi giống token Telegram / khóa bí mật — chỉ in tên file

@@ -4,3 +4,5 @@
 age1lj3hj5y2prsldx6mrd2zydkh8cmzvna5qpu0gxxlfcn40arku4rqck2ha9
 # Huy (Mac) — 2026-11-01
 age1gd92z42d50zt29j67qz2pxqrlcjkvhplq66yf26azrzu22vl8cps9j2v5v
+# Huy (Windows MT5) — 2026-11-01
+age1kkwr7z3d22uyf4wq4l6x60tyeaq6yke29g5ushjq84mstvg4zqas87dc69

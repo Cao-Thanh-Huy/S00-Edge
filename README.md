@@ -14,8 +14,20 @@ keys/            recipients.txt                        khóa công khai được
 scripts/s00.sh                                         giải mã / đóng gói / nhật ký / kiểm checksum
 ```
 
-Dữ liệu giá (không mã hóa, ~500 MB) nằm ở GitHub Release **`data-20261101`** (kèm đặc tả chi tiết `DATA_MT5_XM_README.md`), không nằm trong lịch sử git:
-- `python_csv_data.zip` (`49.8 MB`): 17 file CSV (`data/intraday/` + `data/long/`) xuất trực tiếp từ MT5 `XMGlobal-MT5 20` (giờ UTC, kèm spread thật trên từng nến):
+Dữ liệu giá (không mã hóa, ~550 MB) nằm ở GitHub Release **`data-20261101`** (kèm đặc tả chi tiết `DATA_MT5_XM_README.md`), không nằm trong lịch sử git.
+`install_data.sh` tải đủ, kiểm `SHA256SUMS` rồi bung. **Chọn đúng bộ cho đúng việc:**
+
+| Gói | Thư mục | Dùng để |
+|---|---|---|
+| **`s00_data_xm_20261021.zip`** (48.5 MB) — **BỘ CHUẨN** | `data/xm_20261021/` | So Python ↔ MT5, và giữa các máy. Cùng nến MT5 XM dùng, đã làm sạch. Dấu vân tay `21bf2452159ac879` (`python du_lieu_chuan.py kiem <thư mục>`). Chạy `--data ../data/xm_20261021`, **không** thêm `--xm` (spread đã là spread thật). |
+| `s00_data_python_full_20261101.zip` (92 MB) | `data/xasset_h1`, `intraday_long`, `intraday_eth`, `intraday_fx`, `holdout_*` | Nghiên cứu 3 giai đoạn 2014-17 / 2017-21 / 2022-26 (chuẩn ĐẠT 10/10 ô). Nhiều nguồn (Binance, HistData, Exness) — **không** dùng để so với MT5. |
+| `python_csv_data.zip` (49.8 MB) — bản THÔ | `data/intraday/` | Chỉ để đối chiếu: còn nến D1/H1 thưa lẫn đầu file intraday và spread = 0 trước 2017 (engine sẽ coi là phí 0). |
+| `mt5_xm_<SYMBOL>.zip` × 6 | `bases/XMGlobal-MT5 20/history/` | Lịch sử `.hcc` gốc cho MT5 Strategy Tester. |
+
+Vùng dùng được của bộ chuẩn XM: Vàng/USDJPY từ 6/2014, S&P/Nasdaq từ 6/2016, BTC/ETH từ 7/2017 (tin cậy từ 2018).
+XM **không có nến cuối tuần BTC/ETH trước 2022** và spread crypto 2018–2021 rất cao — kết quả giai đoạn đó trên XM khác hẳn sàn 24/7.
+
+Độ sâu bản THÔ `python_csv_data.zip` (17 file CSV xuất trực tiếp từ MT5 `XMGlobal-MT5 20`, giờ UTC, spread thật trên từng nến):
   - **Vàng (`XAUUSD` / `GOLDmicro`)**: D1 từ **`2011-01-02`** (`4,079` nến) · Intraday (`M5`, `M15`, `H1`) từ **`2013-05-09`** (`880,199` nến M5 — 13.5 năm).
   - **Yên Nhật (`USDJPY` / `USDJPYmicro`)**: D1 từ **`2011-01-02`** (`4,140` nến) · Intraday (`H1`) từ **`2013-05-16`** (`83,877` nến H1 — 13.5 năm).
   - **S&P 500 (`US500` / `US500Cash`)**: D1 từ **`2011-08-07`** (`4,079` nến) · Intraday (`H1`) từ **`2016-05-26`** (`62,621` nến H1 — 10.5 năm).

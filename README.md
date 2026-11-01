@@ -14,7 +14,15 @@ keys/            recipients.txt                        khóa công khai được
 scripts/s00.sh                                         giải mã / đóng gói / nhật ký / kiểm checksum
 ```
 
-Dữ liệu giá (không mã hóa, ~500 MB) nằm ở GitHub Release **`data-20261101`**, không nằm trong lịch sử git.
+Dữ liệu giá (không mã hóa, ~500 MB) nằm ở GitHub Release **`data-20261101`** (kèm đặc tả chi tiết `DATA_MT5_XM_README.md`), không nằm trong lịch sử git:
+- `python_csv_data.zip` (`49.8 MB`): 17 file CSV (`data/intraday/` + `data/long/`) xuất trực tiếp từ MT5 `XMGlobal-MT5 20` (giờ UTC, kèm spread thật trên từng nến):
+  - **Vàng (`XAUUSD` / `GOLDmicro`)**: D1 từ **`2011-01-02`** (`4,079` nến) · Intraday (`M5`, `M15`, `H1`) từ **`2013-05-09`** (`880,199` nến M5 — 13.5 năm).
+  - **Yên Nhật (`USDJPY` / `USDJPYmicro`)**: D1 từ **`2011-01-02`** (`4,140` nến) · Intraday (`H1`) từ **`2013-05-16`** (`83,877` nến H1 — 13.5 năm).
+  - **S&P 500 (`US500` / `US500Cash`)**: D1 từ **`2011-08-07`** (`4,079` nến) · Intraday (`H1`) từ **`2016-05-26`** (`62,621` nến H1 — 10.5 năm).
+  - **Nasdaq 100 (`USTEC` / `US100Cash`)**: D1 từ **`2011-09-18`** (`4,045` nến) · Intraday (`H1`) từ **`2016-05-26`** (`62,563` nến H1 — 10.5 năm).
+  - **Bitcoin (`BTCUSD`)**: D1 từ **`2013-01-01`** (`3,966` nến) · Intraday (`M5`, `M15`, `H1`) từ **`2016-12-13`** (`835,805` nến M5 — 10 năm).
+  - **Ethereum (`ETHUSD`)**: D1 từ **`2016-11-07`** (`3,178` nến) · Intraday (`M15`, `H1`) từ **`2016-12-05`** (`285,998` nến M15 — 10 năm).
+- 6 gói `mt5_xm_<SYMBOL>.zip`: Toàn bộ file `.hcc` gốc (`2010–2026`) của máy chủ `XMGlobal-MT5 20`.
 
 ## Bắt đầu (máy mới)
 

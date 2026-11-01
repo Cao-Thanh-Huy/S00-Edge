@@ -11,11 +11,14 @@ set -e
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 REC="$ROOT/keys/recipients.txt"
 KEY="${S00_AGE_KEY:-$HOME/.s00/age_key.txt}"
+[ -r "$KEY" ] || [ ! -r "$ROOT/../.s00/age_key.txt" ] || KEY="$ROOT/../.s00/age_key.txt"
 AGE="${AGE:-age}"
 OUT_DEFAULT="$ROOT/_giai_ma"
 
 need_age() {
   command -v "$AGE" >/dev/null 2>&1 && return
+  [ -x /opt/homebrew/bin/age ] && AGE=/opt/homebrew/bin/age && return
+  [ -x /usr/local/bin/age ] && AGE=/usr/local/bin/age && return
   la="$(cygpath -u "$LOCALAPPDATA" 2>/dev/null || echo "$LOCALAPPDATA")"   # Git Bash: C:\... -> /c/...
   w="$(ls -d "$la"/Microsoft/WinGet/Packages/FiloSottile.age_*/age/age.exe 2>/dev/null | head -1)"
   [ -n "$w" ] && AGE="$w" && return

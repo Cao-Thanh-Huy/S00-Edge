@@ -2,3 +2,5 @@
 # Thêm/bớt người: xem SECURITY.md. Sửa file này xong phải đóng gói lại các bản muốn họ đọc được.
 # Huy (chủ repo) — 2026-11-01
 age1lj3hj5y2prsldx6mrd2zydkh8cmzvna5qpu0gxxlfcn40arku4rqck2ha9
+# Huy (Mac) — 2026-11-01
+age1gd92z42d50zt29j67qz2pxqrlcjkvhplq66yf26azrzu22vl8cps9j2v5v

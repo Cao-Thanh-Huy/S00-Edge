@@ -23,5 +23,5 @@ jobs:
           done
       - name: Khóa công khai hợp lệ, không có khóa bí mật
         run: |
-          if grep -rq 'AGE-SECRET-KEY' . --exclude-dir=.git; then echo "Có khóa bí mật trong repo!"; exit 1; fi
+          if grep -rIqE 'AGE-SECRET-KEY-1[0-9A-Z]{58}' . --exclude-dir=.git; then echo "Có khóa bí mật trong repo!"; exit 1; fi
           if grep -Ev '^(#|$)' keys/recipients.txt | grep -Evq '^age1[0-9a-z]{58}$'; then echo "Dòng lạ trong recipients.txt"; exit 1; fi

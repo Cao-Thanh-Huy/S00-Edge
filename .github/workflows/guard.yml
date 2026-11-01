@@ -1,0 +1,27 @@
+name: guard
+# Chặn mọi push/PR có file chưa mã hóa hoặc nằm ngoài danh sách cho phép (repo PUBLIC).
+on: [push, pull_request]
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Chỉ cho phép đường dẫn trong danh sách
+        run: |
+          ok='^(\.gitignore|\.gitattributes|README\.md|AGENTS\.md|CLAUDE\.md|GEMINI\.md|SECURITY\.md|\.github/workflows/guard\.yml|keys/recipients\.txt|scripts/s00\.sh|releases/v[0-9.]+/[a-z0-9_]+\.tar\.age|releases/v[0-9.]+/SHA256SUMS|research/[a-z0-9_]+\.tar\.age|research/SHA256SUMS|nhat_ky/[0-9]{4}\.age|nhat_ky/SHA256SUMS)$'
+          bad=$(git ls-files | grep -Ev "$ok" || true)
+          if [ -n "$bad" ]; then echo "File không được phép trên repo public:"; echo "$bad"; exit 1; fi
+      - name: Mọi file .age phải thật sự là bản mã age
+        run: |
+          for f in $(git ls-files '*.age'); do
+            head -c 21 "$f" | grep -q '^age-encryption.org/v1' || { echo "Không phải bản mã age: $f"; exit 1; }
+          done
+      - name: SHA256SUMS khớp
+        run: |
+          for d in releases/* research nhat_ky; do
+            [ -f "$d/SHA256SUMS" ] && (cd "$d" && sha256sum -c SHA256SUMS)
+          done
+      - name: Khóa công khai hợp lệ, không có khóa bí mật
+        run: |
+          if grep -rq 'AGE-SECRET-KEY' . --exclude-dir=.git; then echo "Có khóa bí mật trong repo!"; exit 1; fi
+          if grep -Ev '^(#|$)' keys/recipients.txt | grep -Evq '^age1[0-9a-z]{58}$'; then echo "Dòng lạ trong recipients.txt"; exit 1; fi

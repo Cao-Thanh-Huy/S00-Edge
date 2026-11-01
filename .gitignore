@@ -1,0 +1,22 @@
+# DANH SÁCH CHO PHÉP: chặn MỌI file, chỉ mở những đường dẫn bên dưới.
+# Lỡ tay `git add .` cũng không lọt code / zip / .env / thư mục giải mã lên repo public.
+*
+!*/
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/AGENTS.md
+!/CLAUDE.md
+!/GEMINI.md
+!/SECURITY.md
+!/.github/workflows/guard.yml
+!/keys/recipients.txt
+!/scripts/s00.sh
+!/releases/*/*.tar.age
+!/releases/*/SHA256SUMS
+!/research/*.tar.age
+!/research/SHA256SUMS
+!/nhat_ky/*.age
+!/nhat_ky/SHA256SUMS
+# thư mục giải mã cục bộ — không bao giờ commit
+/_giai_ma/

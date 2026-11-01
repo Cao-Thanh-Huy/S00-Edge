@@ -73,3 +73,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0002 | 2026-11-01 | Huy | GHI CHÚ — nhật ký v5.0 → v5.1 (có đính chính) |
 | 0003 | 2026-11-01 | Claude | ĐẠT — đánh giá độc lập v5.1, chọn preset |
 | 0004 | 2026-11-01 | Claude | GHI CHÚ — kiểm bộ dữ liệu XM xuất từ MT5 (đạt múi giờ/giá; 4 lỗi cần sửa) |
+| 0005 | 2026-11-01 | Claude | GHI CHÚ — Python ↔ MT5 cùng dữ liệu XM: lệch giảm 3–5 lần, nguồn dữ liệu là nguyên nhân chính |

@@ -2,7 +2,7 @@
 
 Kho phát hành **đã mã hóa** của S00 EdgeCore. Repo công khai, nhưng mọi nội dung (code, preset, báo cáo, nghiên cứu, nhật ký)
 chỉ nằm trong file `*.age`, mã hóa bằng [age](https://age-encryption.org) cho từng người có khóa trong `keys/recipients.txt`.
-Không có mật khẩu chung. Quy tắc làm việc: [`AGENTS.md`](AGENTS.md) · Bảo mật & khóa: [`SECURITY.md`](SECURITY.md).
+Không có mật khẩu chung. Quy tắc làm việc: [`AGENTS.md`](AGENTS.md) · Bảo mật & khóa: [`SECURITY.md`](SECURITY.md) · Quy trình kiểm định: [`QUY_TRINH_KIEM_DINH.md`](QUY_TRINH_KIEM_DINH.md).
 
 ## Cấu trúc
 
@@ -55,7 +55,8 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 
 | Bản | File | Ghi chú công khai |
 |---|---|---|
-| v5.1 | `releases/v5.1/s00_v51_20261101.tar.age` | Bản hiện hành — dùng preset ghi trong nhật ký 0003 |
+| v5.1.1 | `releases/v5.1.1/s00_v511_20261102.tar.age` | Bản hiện hành — chiến lược & EA như v5.1, engine Python khớp EA (nhật ký 0008); preset như nhật ký 0003 |
+| v5.1 | `releases/v5.1/s00_v51_20261101.tar.age` | Bản trước (engine Python cũ) |
 | v5.0 | `releases/v5.0/s00_v50_20261030.tar.age` | Bản trước, để đối chiếu |
 
 ## Quy tắc nhật ký (bắt buộc)
@@ -69,9 +70,11 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 
 | # | Ngày | Người | Kết luận |
 |---|---|---|---|
-| 0001 | 2026-11-01 | Claude | GHI CHÚ — tổng hợp mọi giả thuyết v4.4 → v5.1 |
+| 0001 | 2026-11-02 | Claude | GHI CHÚ — tổng hợp mọi giả thuyết v4.4 → v5.1.1 (cập nhật thường xuyên) |
 | 0002 | 2026-11-01 | Huy | GHI CHÚ — nhật ký v5.0 → v5.1 (có đính chính) |
 | 0003 | 2026-11-01 | Claude | ĐẠT — đánh giá độc lập v5.1, chọn preset |
 | 0004 | 2026-11-01 | Claude | GHI CHÚ — kiểm bộ dữ liệu XM xuất từ MT5 (đạt múi giờ/giá; 4 lỗi cần sửa) |
 | 0005 | 2026-11-01 | Claude | GHI CHÚ — Python ↔ MT5 cùng dữ liệu XM: lệch giảm 3–5 lần, nguồn dữ liệu là nguyên nhân chính |
 | 0006 | 2026-11-01 | Claude | ĐẠT — v5.1 KeepSpx so với v5 trên bộ chuẩn XM: nâng cấp nhỏ nhưng nhất quán |
+| 0007 | 2026-11-02 | Claude | BÁC — v5.2: kiểm các đề xuất cải tiến của AI khác (mọi thay đổi bị bác, 1 ghi chú theo dõi) |
+| 0008 | 2026-11-02 | Claude | ĐẠT — engine Python khớp EA (sửa parity); v5.1 KeepSpx vẫn đạt trên engine mới |

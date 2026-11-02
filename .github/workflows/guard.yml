@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Chỉ cho phép đường dẫn trong danh sách
         run: |
-          ok='^(\.gitignore|\.gitattributes|README\.md|AGENTS\.md|CLAUDE\.md|GEMINI\.md|SECURITY\.md|\.github/workflows/guard\.yml|keys/recipients\.txt|scripts/s00\.sh|releases/v[0-9.]+/[a-z0-9_]+\.tar\.age|releases/v[0-9.]+/SHA256SUMS|research/[a-z0-9_]+\.tar\.age|research/SHA256SUMS|nhat_ky/[0-9]{4}\.age|nhat_ky/SHA256SUMS)$'
+          ok='^(\.gitignore|\.gitattributes|README\.md|AGENTS\.md|CLAUDE\.md|GEMINI\.md|SECURITY\.md|QUY_TRINH_KIEM_DINH\.md|\.github/workflows/guard\.yml|keys/recipients\.txt|scripts/s00\.sh|releases/v[0-9.]+/[a-z0-9_]+\.tar\.age|releases/v[0-9.]+/SHA256SUMS|research/[a-z0-9_]+\.tar\.age|research/SHA256SUMS|nhat_ky/[0-9]{4}\.age|nhat_ky/SHA256SUMS)$'
           bad=$(git ls-files | grep -Ev "$ok" || true)
           if [ -n "$bad" ]; then echo "File không được phép trên repo public:"; echo "$bad"; exit 1; fi
       - name: Mọi file .age phải thật sự là bản mã age

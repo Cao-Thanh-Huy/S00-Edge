@@ -4,7 +4,7 @@
 chỗ nào mâu thuẫn thì file này thắng.
 
 ## 1. Repo PUBLIC — bảo mật trước tiên
-- Chỉ commit: `*.age`, `SHA256SUMS`, `README.md`, `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `SECURITY.md`, `scripts/s00.sh`,
+- Chỉ commit: `*.age`, `SHA256SUMS`, `README.md`, `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `SECURITY.md`, `QUY_TRINH_KIEM_DINH.md`, `scripts/s00.sh`,
   `keys/recipients.txt`, `.github/workflows/guard.yml`, `.gitignore`, `.gitattributes`. `.gitignore` và CI `guard` đã chặn sẵn.
 - KHÔNG ghi tên chân, tham số, số liệu chiến lược vào README hay commit message. Nội dung thật chỉ nằm trong file `.age`.
 - KHÔNG đưa `.env`, khóa API, tài khoản sàn, khóa bí mật age vào bất kỳ gói nào.
@@ -21,10 +21,12 @@ chỗ nào mâu thuẫn thì file này thắng.
 3. Commit cả `nhat_ky/` và `README.md`. Mỗi thử nghiệm 1 file riêng → nhiều người ghi cùng lúc không đè nhau.
 4. Script/kết quả lớn: đóng gói lại `research/` bằng `s00.sh pack`.
 
-## 4. Chuẩn ĐẠT (để đổi bản chuẩn)
-- Tốt hơn bản đang chạy ở **10/10 ô**: 3 giai đoạn 2014-17 / 2017-21 / 2022-26 + 2 nửa sau COVID (3/2020→6/2023, 6/2023→10/2026)
-  × 2 mức phí (XM thật, STRESS: spread crypto ×2 + swap ×2). Engine Python của gói, vốn $100k không trần lot; thêm vốn $1k XM Micro
-  nếu thay đổi liên quan lot nhỏ nhất.
+## 4. Chuẩn ĐẠT (để đổi bản chuẩn) — chi tiết & cách chạy: `QUY_TRINH_KIEM_DINH.md`
+- Làm theo luồng trong `QUY_TRINH_KIEM_DINH.md` (chuẩn bị → đọc nhật ký → giả thuyết → công tắc + parity → `kiem_dinh.py` →
+  xác minh MT5 → ghi nhật ký). Luật là MẶC ĐỊNH, không cứng 100%: làm khác thì ghi rõ chỗ khác và lý do; đề xuất luật mới theo
+  mục "Bổ sung / thay đổi luật" của file đó.
+- Mặc định: Bộ A (bộ nghiên cứu) **10/10 ô** — 3 giai đoạn 2014-17 / 2017-21 / 2022-26 + 2 nửa sau COVID × phí XM / STRESS;
+  Bộ B (bộ chuẩn XM, $100k) ≥ 6/8 và 2022-26 thắng cả 2 phí; Bộ C ($1k XM Micro) ≥ 7/10; MaxDD không tăng quá 2 điểm.
 - Kết quả chỉ trên 2022-26 hoặc 2025-26 là TRONG MẪU — không được gọi là OOS, không đủ để đổi bản chuẩn.
   Đã có nhiều thay đổi đẹp ở 2022-26 nhưng thua ở 2014-21 (xem nhật ký).
 - MT5 Strategy Tester dùng để kiểm EA khớp Python và chi phí thật, KHÔNG dùng để chọn tham số trên cùng giai đoạn rồi báo là OOS.

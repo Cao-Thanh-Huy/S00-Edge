@@ -74,3 +74,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0003 | 2026-11-01 | Claude | ĐẠT — đánh giá độc lập v5.1, chọn preset |
 | 0004 | 2026-11-01 | Claude | GHI CHÚ — kiểm bộ dữ liệu XM xuất từ MT5 (đạt múi giờ/giá; 4 lỗi cần sửa) |
 | 0005 | 2026-11-01 | Claude | GHI CHÚ — Python ↔ MT5 cùng dữ liệu XM: lệch giảm 3–5 lần, nguồn dữ liệu là nguyên nhân chính |
+| 0006 | 2026-11-01 | Claude | ĐẠT — v5.1 KeepSpx so với v5 trên bộ chuẩn XM: nâng cấp nhỏ nhưng nhất quán |

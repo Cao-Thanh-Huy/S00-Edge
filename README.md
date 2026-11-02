@@ -78,3 +78,8 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0006 | 2026-11-01 | Claude | ĐẠT — v5.1 KeepSpx so với v5 trên bộ chuẩn XM: nâng cấp nhỏ nhưng nhất quán |
 | 0007 | 2026-11-02 | Claude | BÁC — v5.2: kiểm các đề xuất cải tiến của AI khác (mọi thay đổi bị bác, 1 ghi chú theo dõi) |
 | 0008 | 2026-11-02 | Claude | ĐẠT — engine Python khớp EA (sửa parity); v5.1 KeepSpx vẫn đạt trên engine mới |
+| 0009 | 2026-11-02 | Claude | BÁC — 3 biến thể bộ lọc nén cho chân lệnh chờ |
+| 0010 | 2026-11-02 | Claude | BÁC — ý tưởng chân chỉ số trong phiên (dừng ở Cổng 1) |
+| 0011 | 2026-11-02 | Claude | BÁC — giữ lệnh qua đêm cho một chân FX |
+| 0012 | 2026-11-02 | Claude | BÁC — đánh đảo chiều / sideway trên 34 mã + cặp (dừng ở Cổng 1) |
+| 0013 | 2026-11-02 | Claude | BÁC — bắt đáy theo xu hướng khung lớn (dừng ở Cổng 1) |

@@ -77,7 +77,7 @@ case "$1" in
     src="$2"; verdict="$3"; who="$4"
     [ -f "$src" ] && [ -n "$verdict" ] && [ -n "$who" ] || { echo "Cú pháp: log-new <file.md> <ĐẠT|BÁC|GHI CHÚ> <người>" >&2; exit 1; }
     last="$(ls "$ROOT"/nhat_ky/*.age 2>/dev/null | sed 's#.*/##; s#\.age##' | sort -n | tail -1)"
-    n="$(printf '%04d' $(( ${last:-0} + 1 )))"
+    n="$(printf '%04d' $(( 10#${last:-0} + 1 )))"   # 10#: "0008" là thập phân, không phải bát phân
     "$AGE" -R "$REC" -o "$ROOT/nhat_ky/$n.age" "$src"
     sums "$ROOT/nhat_ky"
     printf '| %s | %s | %s | %s |\n' "$n" "$(date +%Y-%m-%d)" "$who" "$verdict" >> "$ROOT/README.md"

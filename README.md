@@ -55,7 +55,8 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 
 | Bản | File | Ghi chú công khai |
 |---|---|---|
-| v5.1.2 | `releases/v5.1.2/s00_v512_20261103.tar.age` | Bản hiện hành — nâng cấp một chân theo quyết định chủ repo (nhật ký 0016); EA phải biên dịch lại (đọc README trong gói) |
+| v5.2 | `releases/v5.2/s00_v52_20261103.tar.age` | Bản hiện hành — v5.1.2 + một thay đổi tỉ trọng có điều kiện theo quyết định chủ repo (nhật ký 0017); EA CHƯA biên dịch, preset cũ = v5.1.2 (đọc README trong gói) |
+| v5.1.2 | `releases/v5.1.2/s00_v512_20261103.tar.age` | Bản trước — nâng cấp một chân theo quyết định chủ repo (nhật ký 0016) |
 | v5.1.1 | `releases/v5.1.1/s00_v511_20261102.tar.age` | Bản trước — chiến lược & EA như v5.1, engine Python khớp EA (nhật ký 0008); preset như nhật ký 0003 |
 | v5.1 | `releases/v5.1/s00_v51_20261101.tar.age` | Bản trước (engine Python cũ) |
 | v5.0 | `releases/v5.0/s00_v50_20261030.tar.age` | Bản trước, để đối chiếu |
@@ -87,3 +88,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0014 | 2026-11-03 | Claude | GHI CHÚ — nhường vốn mềm cho một chân FX khi giữ qua đêm (tiền đề của 0016) |
 | 0015 | 2026-11-03 | Claude | GHI CHÚ — tinh chỉnh hậu nghiệm cho một chân FX (tiền đề của 0016) |
 | 0016 | 2026-11-03 | Claude | ĐẠT — đánh giá toàn diện; chủ repo duyệt nâng cấp một chân, phát hành v5.1.2 |
+| 0017 | 2026-11-03 | Claude | ĐẠT — chủ repo duyệt phát hành v5.2 (khung v2: ứng viên forward); các tổ hợp đề xuất kèm theo bị bác |

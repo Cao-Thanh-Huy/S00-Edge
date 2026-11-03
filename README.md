@@ -55,7 +55,8 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 
 | Bản | File | Ghi chú công khai |
 |---|---|---|
-| v5.1.1 | `releases/v5.1.1/s00_v511_20261102.tar.age` | Bản hiện hành — chiến lược & EA như v5.1, engine Python khớp EA (nhật ký 0008); preset như nhật ký 0003 |
+| v5.1.2 | `releases/v5.1.2/s00_v512_20261103.tar.age` | Bản hiện hành — nâng cấp một chân theo quyết định chủ repo (nhật ký 0016); EA phải biên dịch lại (đọc README trong gói) |
+| v5.1.1 | `releases/v5.1.1/s00_v511_20261102.tar.age` | Bản trước — chiến lược & EA như v5.1, engine Python khớp EA (nhật ký 0008); preset như nhật ký 0003 |
 | v5.1 | `releases/v5.1/s00_v51_20261101.tar.age` | Bản trước (engine Python cũ) |
 | v5.0 | `releases/v5.0/s00_v50_20261030.tar.age` | Bản trước, để đối chiếu |
 
@@ -70,7 +71,7 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 
 | # | Ngày | Người | Kết luận |
 |---|---|---|---|
-| 0001 | 2026-11-02 | Claude | GHI CHÚ — tổng hợp mọi giả thuyết v4.4 → v5.1.1 (cập nhật thường xuyên) |
+| 0001 | 2026-11-03 | Claude | GHI CHÚ — tổng hợp mọi giả thuyết v4.4 → v5.1.2 (cập nhật thường xuyên) |
 | 0002 | 2026-11-01 | Huy | GHI CHÚ — nhật ký v5.0 → v5.1 (có đính chính) |
 | 0003 | 2026-11-01 | Claude | ĐẠT — đánh giá độc lập v5.1, chọn preset |
 | 0004 | 2026-11-01 | Claude | GHI CHÚ — kiểm bộ dữ liệu XM xuất từ MT5 (đạt múi giờ/giá; 4 lỗi cần sửa) |
@@ -83,3 +84,6 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0011 | 2026-11-02 | Claude | BÁC — giữ lệnh qua đêm cho một chân FX |
 | 0012 | 2026-11-02 | Claude | BÁC — đánh đảo chiều / sideway trên 34 mã + cặp (dừng ở Cổng 1) |
 | 0013 | 2026-11-02 | Claude | BÁC — bắt đáy theo xu hướng khung lớn (dừng ở Cổng 1) |
+| 0014 | 2026-11-03 | Claude | GHI CHÚ — nhường vốn mềm cho một chân FX khi giữ qua đêm (tiền đề của 0016) |
+| 0015 | 2026-11-03 | Claude | GHI CHÚ — tinh chỉnh hậu nghiệm cho một chân FX (tiền đề của 0016) |
+| 0016 | 2026-11-03 | Claude | ĐẠT — đánh giá toàn diện; chủ repo duyệt nâng cấp một chân, phát hành v5.1.2 |

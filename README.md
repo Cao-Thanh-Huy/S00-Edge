@@ -89,3 +89,7 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0015 | 2026-11-03 | Claude | GHI CHÚ — tinh chỉnh hậu nghiệm cho một chân FX (tiền đề của 0016) |
 | 0016 | 2026-11-03 | Claude | ĐẠT — đánh giá toàn diện; chủ repo duyệt nâng cấp một chân, phát hành v5.1.2 |
 | 0017 | 2026-11-03 | Claude | ĐẠT — chủ repo duyệt phát hành v5.2 (khung v2: ứng viên forward); các tổ hợp đề xuất kèm theo bị bác |
+| 0018 | 2026-11-04 | Claude | GHI CHÚ — rà soát lại các thay đổi trong gói và ứng viên cũ trên engine khớp EA; không đổi gói |
+| 0019 | 2026-11-04 | Claude | GHI CHÚ — chi phí thực thi, capacity và đòn bẩy: chỉ xét live ở điều kiện chi phí gần đây, quy mô vốn giới hạn |
+| 0020 | 2026-11-04 | Claude | GHI CHÚ — công cụ chấm có phạt đa kiểm định; đề xuất chưa áp dụng vào quy trình |
+| 0021 | 2026-11-04 | Claude | BÁC — phân bổ lại tỉ trọng cấp danh mục; giữ tỉ trọng hiện tại |

@@ -96,3 +96,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0022 | 2026-11-04 | Antigravity | GHI CHÚ — biên dịch EA v5.2, kiểm định MT5 Strategy Tester và đối chiếu 7 ngày lệnh thực tế (khớp kịch bản code) |
 | 0023 | 2026-11-04 | Claude | GHI CHÚ — kiểm lại 0022 bằng dữ liệu & log live: nhiều số liệu sai, tuần live chưa phải forward của v5.2; bản sửa lỗi vận hành v5.2.1 (không đổi logic) |
 | 0024 | 2026-11-04 | Claude | GHI CHÚ — rà soát & vá bot Telegram/chart đi kèm: bảo mật danh sách người nhận, không nạp lại EA, chống spam/treo mạng (không đổi chiến lược) |
+| 0025 | 2026-11-04 | Claude | GHI CHÚ — hướng dẫn & checklist triển khai bản ổn định trên máy live (dành cho chatbot trên server) |

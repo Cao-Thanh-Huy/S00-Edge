@@ -8,11 +8,13 @@ Không có mật khẩu chung. Quy tắc làm việc: [`AGENTS.md`](AGENTS.md) �
 
 ```
 releases/vX.Y/   s00_vXY_<ngày>.tar.age + SHA256SUMS   bản phát hành (python/, mt5/, presets, báo cáo) — không ghi đè tên cũ
-research/        s00_research_<ngày>.tar.age           toàn bộ script + kết quả nghiên cứu (không kèm dữ liệu giá)
+research/        s00_research_<ngày>.tar.age           script + tài liệu + kết quả nhỏ (không kèm dữ liệu giá; phần nặng ở Release lưu trữ)
 nhat_ky/         NNNN.age                              MỖI thử nghiệm 1 file — đọc trước khi thử bất cứ gì
 keys/            recipients.txt                        khóa công khai được đọc
 scripts/s00.sh                                         giải mã / đóng gói / nhật ký / kiểm checksum
 ```
+
+Kết quả nghiên cứu cũ, nặng (log/báo cáo MT5, CSV trung gian) đã tách sang GitHub Release **`research-luutru-20261105`** (`s00_research_luutru_20261105.tar.age`, mã hóa age, thư mục gốc `S00_NghienCuu/` — bung cùng chỗ với gói `research/` là đủ). Gói trong git chỉ còn vài MB nên repo không phình thêm mỗi lần cập nhật.
 
 Dữ liệu giá (không mã hóa, ~550 MB) nằm ở GitHub Release **`data-20261101`** (kèm đặc tả chi tiết `DATA_MT5_XM_README.md`), không nằm trong lịch sử git.
 `install_data.sh` tải đủ, kiểm `SHA256SUMS` rồi bung. **Chọn đúng bộ cho đúng việc:**

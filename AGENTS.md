@@ -19,7 +19,10 @@ chỗ nào mâu thuẫn thì file này thắng.
 1. Viết 1 file markdown theo mẫu ở cuối file này.
 2. `sh scripts/s00.sh log-new <file.md> <ĐẠT|BÁC|GHI CHÚ> <người>` → tạo `nhat_ky/NNNN.age` + thêm 1 dòng vào bảng README.
 3. Commit cả `nhat_ky/` và `README.md`. Mỗi thử nghiệm 1 file riêng → nhiều người ghi cùng lúc không đè nhau.
-4. Script/kết quả lớn: đóng gói lại `research/` bằng `s00.sh pack`.
+4. Script/kết quả: đóng gói lại `research/` bằng `s00.sh pack`. Gói trong git chỉ chứa script, tài liệu và kết quả NHỎ (vài MB).
+   Kết quả nặng và không còn thay đổi (log/báo cáo MT5, CSV trung gian, ảnh) → gói lưu trữ riêng, đưa lên GitHub Release
+   `research-luutru-<ngày>` (cần chủ repo cho phép). Không đưa lại vào gói trong git. Gói lưu trữ hiện có: `research-luutru-20261105`.
+   Lấy về: `gh release download research-luutru-20261105 -D _giai_ma/` rồi `sh scripts/s00.sh unpack _giai_ma/s00_research_luutru_20261105.tar.age`.
 
 ## 4. Chuẩn ĐẠT (để đổi bản chuẩn) — chi tiết & cách chạy: `QUY_TRINH_KIEM_DINH.md`
 - Làm theo luồng trong `QUY_TRINH_KIEM_DINH.md` (chuẩn bị → đọc nhật ký → giả thuyết → công tắc + parity → `kiem_dinh.py` →

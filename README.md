@@ -101,3 +101,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0025 | 2026-11-04 | Claude | GHI CHÚ — hướng dẫn & checklist triển khai bản ổn định trên máy live (dành cho chatbot trên server) |
 | 0026 | 2026-11-05 | Claude | BÁC — kiểm chứng độc lập hai vòng đề xuất chân mới của AI khác: không giữ được trên dữ liệu ngoài mẫu, không đưa vào gói; kèm kiểm edge từng chân của gói bằng placebo (không đổi gói) |
 | 0027 | 2026-11-05 | Claude | BÁC — thêm hoặc thay chân bằng đề xuất mới không hơn giữ nguyên; chỉ báo sơn lại và vào lệnh sớm bằng tín hiệu tạm / đa khung không có edge sau phí; khôi phục gói local về đúng bản phát hành hiện hành (không đổi gói) |
+| 0028 | 2026-11-06 | Claude | BÁC — chạy từng chân của bản hiện hành trên các mã forex/retail phổ biến: không chân nào dùng chung được cho các cặp forex chính; chỉ một cặp chân–mã được đề cử kiểm tiếp bằng dữ liệu sàn (không đổi gói) |

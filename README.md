@@ -22,21 +22,23 @@ Dữ liệu giá (không mã hóa, ~550 MB) nằm ở GitHub Release **`data-202
 | Gói | Thư mục | Dùng để |
 |---|---|---|
 | **`s00_data_xm_20261021.zip`** (48.5 MB) — **BỘ CHUẨN** | `data/xm_20261021/` | So Python ↔ MT5, và giữa các máy. Cùng nến MT5 XM dùng, đã làm sạch. Dấu vân tay `21bf2452159ac879` (`python du_lieu_chuan.py kiem <thư mục>`). Chạy `--data ../data/xm_20261021`, **không** thêm `--xm` (spread đã là spread thật). |
+| `s00_data_xm_EURUSD.zip` (34.9 MB) | `data/xm_20261021/` | Bổ sung `EURUSD` (`EURUSDmicro` XM đã làm sạch: `D1`, `H1`, `M15`, `M5`, `specs_EURUSD.csv`, `manifest_EURUSD.json`) vào bộ chuẩn XM mà không đổi dấu vân tay 6 mã gốc. |
 | `s00_data_python_full_20261101.zip` (92 MB) | `data/xasset_h1`, `intraday_long`, `intraday_eth`, `intraday_fx`, `holdout_*` | Nghiên cứu 3 giai đoạn 2014-17 / 2017-21 / 2022-26 (chuẩn ĐẠT 10/10 ô). Nhiều nguồn (Binance, HistData, Exness) — **không** dùng để so với MT5. |
 | `python_csv_data.zip` (49.8 MB) — bản THÔ | `data/intraday/` | Chỉ để đối chiếu: còn nến D1/H1 thưa lẫn đầu file intraday và spread = 0 trước 2017 (engine sẽ coi là phí 0). |
-| `mt5_xm_<SYMBOL>.zip` × 6 | `bases/XMGlobal-MT5 20/history/` | Lịch sử `.hcc` gốc cho MT5 Strategy Tester. |
+| `mt5_xm_<SYMBOL>.zip` × 7 | `bases/XMGlobal-MT5 20/history/` | Lịch sử `.hcc` gốc cho MT5 Strategy Tester (gồm thêm `mt5_xm_EURUSDmicro.zip`). |
 
-Vùng dùng được của bộ chuẩn XM: Vàng/USDJPY từ 6/2014, S&P/Nasdaq từ 6/2016, BTC/ETH từ 7/2017 (tin cậy từ 2018).
+Vùng dùng được của bộ chuẩn XM: Vàng/USDJPY/EURUSD từ 6/2014, S&P/Nasdaq từ 6/2016, BTC/ETH từ 7/2017 (tin cậy từ 2018).
 XM **không có nến cuối tuần BTC/ETH trước 2022** và spread crypto 2018–2021 rất cao — kết quả giai đoạn đó trên XM khác hẳn sàn 24/7.
 
-Độ sâu bản THÔ `python_csv_data.zip` (17 file CSV xuất trực tiếp từ MT5 `XMGlobal-MT5 20`, giờ UTC, spread thật trên từng nến):
+Độ sâu bản THÔ `python_csv_data.zip` + `s00_data_xm_EURUSD.zip` (21 file CSV xuất trực tiếp từ MT5 `XMGlobal-MT5 20`, giờ UTC, spread thật trên từng nến):
   - **Vàng (`XAUUSD` / `GOLDmicro`)**: D1 từ **`2011-01-02`** (`4,079` nến) · Intraday (`M5`, `M15`, `H1`) từ **`2013-05-09`** (`880,199` nến M5 — 13.5 năm).
   - **Yên Nhật (`USDJPY` / `USDJPYmicro`)**: D1 từ **`2011-01-02`** (`4,140` nến) · Intraday (`H1`) từ **`2013-05-16`** (`83,877` nến H1 — 13.5 năm).
+  - **Euro / USD (`EURUSD` / `EURUSDmicro`)**: D1 từ **`2010-01-03`** (`4,325` nến) · Intraday (`H1` từ **`2013-05-01`** — `83,659` nến; `M15`/`M5` từ **`2014-06-01`** — `308,043` nến M15 / `923,575` nến M5).
   - **S&P 500 (`US500` / `US500Cash`)**: D1 từ **`2011-08-07`** (`4,079` nến) · Intraday (`H1`) từ **`2016-05-26`** (`62,621` nến H1 — 10.5 năm).
   - **Nasdaq 100 (`USTEC` / `US100Cash`)**: D1 từ **`2011-09-18`** (`4,045` nến) · Intraday (`H1`) từ **`2016-05-26`** (`62,563` nến H1 — 10.5 năm).
   - **Bitcoin (`BTCUSD`)**: D1 từ **`2013-01-01`** (`3,966` nến) · Intraday (`M5`, `M15`, `H1`) từ **`2016-12-13`** (`835,805` nến M5 — 10 năm).
   - **Ethereum (`ETHUSD`)**: D1 từ **`2016-11-07`** (`3,178` nến) · Intraday (`M15`, `H1`) từ **`2016-12-05`** (`285,998` nến M15 — 10 năm).
-- 6 gói `mt5_xm_<SYMBOL>.zip`: Toàn bộ file `.hcc` gốc (`2010–2026`) của máy chủ `XMGlobal-MT5 20`.
+- 7 gói `mt5_xm_<SYMBOL>.zip`: Toàn bộ file `.hcc` gốc (`2003–2026`) của máy chủ `XMGlobal-MT5 20`.
 
 ## Bắt đầu (máy mới)
 

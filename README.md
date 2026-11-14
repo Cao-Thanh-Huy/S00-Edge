@@ -107,3 +107,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0029 | 2026-11-06 | Claude | BÁC — kiểm độ bền, dữ liệu sàn và cấp danh mục cho cặp chân–mã được đề cử ở 0028: đóng góp vào danh mục không vượt mức của một chân ngẫu nhiên; không thêm mã mới vào EA (không đổi gói) |
 | 0030 | 2026-11-07 | Antigravity | GHI CHÚ — thử nghiệm bổ sung dữ liệu ngoại sinh (phái sinh & vĩ mô liên thị trường) làm hệ số điều chỉnh rủi ro mềm và module thu thập dữ liệu cho EA: cải thiện trên các kịch bản kiểm thử MT5 nhưng giữ làm module tùy chọn, không nâng cấp bản phát hành (không đổi gói) |
 | 0031 | 2026-11-14 | Antigravity | GHI CHÚ — bổ sung bộ lọc chi phí cho nhánh cày khối lượng tài khoản nhỏ và đồng bộ EA/preset kiểm thử MT5 (không đổi gói phát hành) |
+| 0032 | 2026-11-14 | Antigravity | GHI CHÚ — tích hợp cơ chế dùng vốn nhàn rỗi & nhường ký quỹ tự động chung với bản chính trên tài khoản nhỏ, kiểm chứng MT5 Strategy Tester (không đổi gói phát hành) |

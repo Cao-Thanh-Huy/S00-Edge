@@ -109,3 +109,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0031 | 2026-11-14 | Antigravity | GHI CHÚ — bổ sung bộ lọc chi phí cho nhánh cày khối lượng tài khoản nhỏ và đồng bộ EA/preset kiểm thử MT5 (không đổi gói phát hành) |
 | 0032 | 2026-11-14 | Antigravity | GHI CHÚ — tích hợp cơ chế dùng vốn nhàn rỗi & nhường ký quỹ tự động chung với bản chính trên tài khoản nhỏ, kiểm chứng MT5 Strategy Tester (không đổi gói phát hành) |
 | 0033 | 2026-11-14 | Antigravity | GHI CHÚ — hợp nhất nhánh cày khối lượng vào bản hiện hành với cơ chế chạy song song khi dư hạn mức và nhường vốn chọn lọc khi cạn dư địa; kiểm chứng parity và đa chế độ (không đổi gói phát hành) |
+| 0034 | 2026-11-14 | Antigravity | GHI CHÚ — đối chứng hai hướng tích hợp nhánh cày khối lượng, siết bộ lọc chọn lọc, bổ sung đặt cọc hạn mức cho lệnh chờ và chế độ trần vốn tùy chọn (không đổi gói phát hành) |

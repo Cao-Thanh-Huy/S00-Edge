@@ -113,3 +113,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0035 | 2026-11-14 | Claude | GHI CHÚ — kiểm chứng độc lập v5.23 trên MT5 Strategy Tester: biên dịch sạch, parity tuyệt đối khi tắt Backcom, nhánh Backcom chạy ổn định; nhưng chưa đạt luật ĐẠT (A/B/C chưa đủ ô) và mức tăng thực tế chưa cộng backcom |
 | 0036 | 2026-11-15 | Antigravity | GHI CHÚ — thống kê chi tiết theo khung giờ/phiên/chế độ của nhánh cày khối lượng, đính chính đối chứng cấu hình năm hiện tại và bổ sung điều tiết khối lượng tự động tùy chọn (không đổi gói phát hành) |
 | 0037 | 2026-11-15 | Antigravity | GHI CHÚ — siết điều kiện kích hoạt song song và lọc gọn rổ tín hiệu cho nhánh phụ nghiên cứu, kiểm chứng trên bộ kiểm chuẩn và trình mô phỏng giao dịch (không đổi gói phát hành) |
+| 0038 | 2026-11-16 | Antigravity | GHI CHÚ — mở rộng điều tiết quy mô theo dư địa vốn rỗi và nâng cấp bộ lọc chất lượng tín hiệu cho nhánh phụ nghiên cứu (không đổi gói phát hành) |

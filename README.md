@@ -59,6 +59,7 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 
 | Bản | File | Ghi chú công khai |
 |---|---|---|
+| v5.4 | `releases/v5.4/s00_v54_20261120.tar.age` | Bản ứng viên kiểm chứng MT5 — tổng hợp nâng cấp cấu trúc sau rà soát toàn diện (nhật ký 0044); EA CHƯA biên dịch trên máy đóng gói, giữ tương thích ngược preset cũ |
 | v5.3 | `releases/v5.3/s00_v53_20261118.tar.age` | Bản hiện hành — hợp nhất nhánh bổ trợ và lớp bảo vệ vận hành thực tế (nhật ký 0042, kiểm chứng MT5 0043); đã biên dịch EA & kèm bot đồng hành |
 | v5.2 | `releases/v5.2/s00_v52_20261103.tar.age` | Bản trước — v5.1.2 + một thay đổi tỉ trọng có điều kiện theo quyết định chủ repo (nhật ký 0017); EA CHƯA biên dịch, preset cũ = v5.1.2 (đọc README trong gói) |
 | v5.1.2 | `releases/v5.1.2/s00_v512_20261103.tar.age` | Bản trước — nâng cấp một chân theo quyết định chủ repo (nhật ký 0016) |
@@ -120,3 +121,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0041 | 2026-11-18 | Antigravity | GHI CHÚ — tối ưu nhánh phụ nghiên cứu cho tài khoản tiêu chuẩn vốn nhỏ, xuất hai cấu hình cân bằng lợi nhuận và mượt đường cong vốn (không đổi gói phát hành) |
 | 0042 | 2026-11-18 | Antigravity | ĐẠT — tổng hợp kiểm định và phát hành bản nâng cấp tiếp theo kèm lớp tự động kiểm tra tài khoản, co giãn đỉnh vốn và hàng đợi cảnh báo (EA chưa biên dịch trên máy đóng gói) |
 | 0043 | 2026-11-18 | Huy | ĐẠT / GHI CHÚ — xác nhận biên dịch & kiểm chứng MT5 v5.3 (1m OHLC & Every tick), cập nhật bot Telegram đồng hành và triển khai live |
+| 0044 | 2026-11-20 | Huy/Antigravity | ĐẠT — tổng hợp kiểm định toàn diện từng thành phần và đóng gói ứng viên phát hành mới để kiểm chứng MT5 (EA chưa biên dịch trên máy đóng gói) |

@@ -59,6 +59,7 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 
 | Bản | File | Ghi chú công khai |
 |---|---|---|
+| v5.6 | `releases/v5.6/s00_v56_20261122.tar.age` | Bản ứng viên kiểm chứng MT5 — nâng cấp điều phối theo chu kỳ dài hạn đa pha (nhật ký 0048); EA & bot đồng hành CHƯA biên dịch trên máy đóng gói, giữ tương thích ngược tuyệt đối preset cũ |
 | v5.5 | `releases/v5.5/s00_v55_20261120.tar.age` | Bản hiện hành — bổ sung mở rộng sau kiểm toán toàn diện vũ trụ thị trường (nhật ký 0046, kiểm chứng MT5 & triển khai live 0047); đã biên dịch EA, giữ tương thích ngược preset cũ & kèm bot đồng hành |
 | v5.4 | `releases/v5.4/s00_v54_20261120.tar.age` | Bản trước — tổng hợp nâng cấp cấu trúc sau rà soát toàn diện (nhật ký 0044, kiểm chứng MT5 & triển khai live 0045); đã biên dịch EA, giữ tương thích ngược preset cũ & kèm bot đồng hành |
 | v5.3 | `releases/v5.3/s00_v53_20261118.tar.age` | Bản trước — hợp nhất nhánh bổ trợ và lớp bảo vệ vận hành thực tế (nhật ký 0042, kiểm chứng MT5 0043); đã biên dịch EA & kèm bot đồng hành |
@@ -126,3 +127,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0045 | 2026-11-20 | Huy/Antigravity | ĐẠT — xác nhận biên dịch & kiểm chứng MT5 v5.4 đa giai đoạn (1m OHLC & Every tick), cập nhật bot Telegram đồng hành và triển khai live |
 | 0046 | 2026-11-20 | Huy/Antigravity | ĐẠT — kiểm toán mở rộng vũ trụ thị trường ngoài danh mục và đóng gói ứng viên kiểm chứng MT5 (EA chưa biên dịch trên máy đóng gói) |
 | 0047 | 2026-11-20 | Huy/Antigravity | ĐẠT — xác nhận biên dịch & kiểm chứng MT5 v5.5 đa giai đoạn (1m OHLC & Every tick), cập nhật bot Telegram đồng hành và triển khai live |
+| 0048 | 2026-11-22 | Huy/Antigravity | ĐẠT — kiểm định toàn diện điều phối theo chu kỳ dài hạn đa pha và đóng gói ứng viên kiểm chứng MT5 (EA & bot đồng hành chưa biên dịch trên máy đóng gói) |

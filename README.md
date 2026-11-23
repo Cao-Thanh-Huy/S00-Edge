@@ -133,3 +133,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0050 | 2026-11-22 | Huy/Antigravity | ĐẠT — kiểm định toàn diện chu kỳ vĩ mô, mở rộng đối xứng hai chiều và đối chứng tiến hóa đa phiên bản; đóng gói ứng viên phát hành mới để kiểm chứng MT5 (EA & bot đồng hành chưa biên dịch trên máy đóng gói) |
 | 0051 | 2026-11-22 | Huy/Antigravity | ĐẠT — xác nhận biên dịch & kiểm chứng MT5 v5.7 đa giai đoạn (1m OHLC & Every tick), cập nhật bot đồng hành và triển khai live |
 | 0052 | 2026-11-23 | Huy/Antigravity | GHI CHÚ — vá lỗi vận hành live cho EA v5.7 và nâng cấp bot đồng hành v4.63 (giám sát EA, xuất lịch sử JSON, giao diện gọn; không đổi chiến lược) |
+| 0053 | 2026-11-23 | Huy/Antigravity | GHI CHÚ — vá lỗi làm tròn khối lượng nhỏ trên EA v5.7 và nâng cấp bot đồng hành v4.64 (hiển thị lot động & trạng thái chờ lệnh chính; không đổi chiến lược) |

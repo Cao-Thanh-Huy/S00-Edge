@@ -59,7 +59,7 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 
 | Bản | File | Ghi chú công khai |
 |---|---|---|
-| v5.7 | `releases/v5.7/s00_v57_20261122.tar.age` | Bản đang chạy live — mở rộng đối xứng hai chiều và điều phối chu kỳ vĩ mô nhân quả (nhật ký 0050, kiểm chứng MT5 & triển khai live 0051); đã biên dịch EA & bot đồng hành, giữ tương thích ngược tuyệt đối preset cũ |
+| v5.7 | `releases/v5.7/s00_v57_20261122.tar.age` | Bản đang chạy live — mở rộng đối xứng hai chiều và điều phối chu kỳ vĩ mô nhân quả (nhật ký 0050, kiểm chứng MT5 & triển khai live 0051, vá vận hành & bot đồng hành 0052); đã biên dịch EA & bot đồng hành, giữ tương thích ngược tuyệt đối preset cũ |
 | v5.6 | `releases/v5.6/s00_v56_20261122.tar.age` | Bản trước — nâng cấp điều phối theo chu kỳ dài hạn đa pha (nhật ký 0048, kiểm chứng MT5 & triển khai live 0049); đã biên dịch EA & bot đồng hành, giữ tương thích ngược tuyệt đối preset cũ |
 | v5.5 | `releases/v5.5/s00_v55_20261120.tar.age` | Bản trước — bổ sung mở rộng sau kiểm toán toàn diện vũ trụ thị trường (nhật ký 0046, kiểm chứng MT5 & triển khai live 0047); đã biên dịch EA, giữ tương thích ngược preset cũ & kèm bot đồng hành |
 | v5.4 | `releases/v5.4/s00_v54_20261120.tar.age` | Bản trước — tổng hợp nâng cấp cấu trúc sau rà soát toàn diện (nhật ký 0044, kiểm chứng MT5 & triển khai live 0045); đã biên dịch EA, giữ tương thích ngược preset cũ & kèm bot đồng hành |
@@ -132,3 +132,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0049 | 2026-11-22 | Huy/Antigravity | ĐẠT — xác nhận biên dịch & kiểm chứng MT5 v5.6 đa giai đoạn (1m OHLC & Every tick), cập nhật bot Telegram đồng hành và triển khai live |
 | 0050 | 2026-11-22 | Huy/Antigravity | ĐẠT — kiểm định toàn diện chu kỳ vĩ mô, mở rộng đối xứng hai chiều và đối chứng tiến hóa đa phiên bản; đóng gói ứng viên phát hành mới để kiểm chứng MT5 (EA & bot đồng hành chưa biên dịch trên máy đóng gói) |
 | 0051 | 2026-11-22 | Huy/Antigravity | ĐẠT — xác nhận biên dịch & kiểm chứng MT5 v5.7 đa giai đoạn (1m OHLC & Every tick), cập nhật bot đồng hành và triển khai live |
+| 0052 | 2026-11-23 | Huy/Antigravity | GHI CHÚ — vá lỗi vận hành live cho EA v5.7 và nâng cấp bot đồng hành v4.63 (giám sát EA, xuất lịch sử JSON, giao diện gọn; không đổi chiến lược) |

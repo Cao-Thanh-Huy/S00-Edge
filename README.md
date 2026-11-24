@@ -136,3 +136,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0053 | 2026-11-23 | Huy/Antigravity | GHI CHÚ — vá lỗi làm tròn khối lượng nhỏ trên EA v5.7 và nâng cấp bot đồng hành v4.64 (hiển thị lot động & trạng thái chờ lệnh chính; không đổi chiến lược) |
 | 0054 | 2026-11-24 | Huy/Antigravity | GHI CHÚ — nâng cấp bot đồng hành v4.65: tách luồng đăng mở/đóng lệnh tự động reply cho kênh công khai (không đổi chiến lược) |
 | 0055 | 2026-11-24 | Huy/Antigravity | GHI CHÚ — nâng cấp bot đồng hành v4.66: giới hạn timeout WinHTTP chống treo mạng, bỏ fallback thừa và tự xoay vòng file chẩn đoán (không đổi chiến lược) |
+| 0056 | 2026-11-25 | Huy/Antigravity | BÁC — kiểm định loại trừ các nhánh mở rộng còn sót, bộ lọc chống nhiễu tin, mùa vụ theo lịch và bốn hướng chế độ thị trường / quản trị rủi ro cụm trên nền bản hiện hành: không hướng nào vượt chuẩn đa kiểm định, giữ nguyên gói v5.7 (không đổi gói) |

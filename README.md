@@ -148,3 +148,4 @@ Chưa có khóa? Tạo bằng `age-keygen -o ~/.s00/age_key.txt` rồi gửi ch�
 | 0062 | 2026-11-28 | Huy/Antigravity | ĐẠT — hoàn tất kiểm định ba giai đoạn tối ưu danh mục và đóng gói ứng viên phát hành v5.91 (EA & bot đồng hành chưa biên dịch trên máy đóng gói) |
 | 0063 | 2026-11-28 | Huy/Antigravity | ĐẠT — xác nhận biên dịch & kiểm chứng MT5 v5.91 đa giai đoạn (1m OHLC, Every tick & forward mù), vá hiển thị bot đồng hành v4.71 và triển khai live |
 | 0064 | 2026-11-28 | Huy/Antigravity | GHI CHÚ — đóng gói độc lập nhánh thử nghiệm v5.0 tách biệt hoàn toàn bản live v5.91 vào gói mã hóa riêng trong research/ (đã biên dịch sạch và kiểm chứng MT5 Strategy Tester; không đổi bản phát hành live) |
+| 0065 | 2026-11-29 | Huy/Antigravity | GHI CHÚ — đóng gói độc lập nhánh thử nghiệm v5.1 (vá vận hành thực thi và tối ưu đóng lệnh đối ứng, đã biên dịch sạch và kiểm chứng MT5 đa khung kèm Every tick; bác bỏ các hướng mở rộng không đạt chuẩn; không đổi bản phát hành live v5.91) |
